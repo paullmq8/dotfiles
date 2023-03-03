@@ -21,15 +21,15 @@ vim.cmd([[
   augroup end
 ]])
 return require('packer').startup(function(use)
-  use("wbthomason/packer.nvim")
+  use('wbthomason/packer.nvim')
 
   --color scheme
-  use("folke/tokyonight.nvim")
-  -- use { "catppuccin/nvim", as = "catppuccin" }
-  -- use("ellisonleao/gruvbox.nvim")
-  
-  use("ggandor/leap.nvim")
-  use("ggandor/flit.nvim")
+  -- use('folke/tokyonight.nvim')
+  use { 'catppuccin/nvim', as = 'catppuccin' }
+  -- use('ellisonleao/gruvbox.nvim')
+
+  use('ggandor/leap.nvim')
+  --use('ggandor/flit.nvim')
 
   use {
     'nvim-lualine/lualine.nvim',
@@ -48,34 +48,40 @@ return require('packer').startup(function(use)
     -- ,tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
   --此插件也适用于tmux
-  use("christoomey/vim-tmux-navigator") --用Ctrl + hjkl来定位窗口
-  use("nvim-treesitter/nvim-treesitter") --语法高亮
-  use("p00f/nvim-ts-rainbow") --配合treesitter，不同括号颜色区分
+  use('christoomey/vim-tmux-navigator') --用Ctrl + hjkl来定位窗口
+  use('nvim-treesitter/nvim-treesitter') --语法高亮
+  use('p00f/nvim-ts-rainbow') --配合treesitter，不同括号颜色区分
   use{
-    "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim", --这个相当于mason.nvim和lspconfig的桥梁
-    "neovim/nvim-lspconfig"
+    'williamboman/mason.nvim',
+    'williamboman/mason-lspconfig.nvim', --这个相当于mason.nvim和lspconfig的桥梁
+    'neovim/nvim-lspconfig'
   }
   --代码片段插件
-  use("hrsh7th/nvim-cmp") --the auto completion plugin
-  use("hrsh7th/cmp-nvim-lsp") --lsp本身的completion
-  use("hrsh7th/cmp-path") --文件路径
-  use("L3MON4D3/LuaSnip") --snippets引擎，不装这个自动补全会出问题
-  use("saadparwaiz1/cmp_luasnip")
-  use("rafamadriz/friendly-snippets")
-  use("numToStr/Comment.nvim") --gcc和gc注释
-  use("windwp/nvim-autopairs") --自动补全括号
-  use("akinsho/bufferline.nvim") --buffer分割线
-  use("lewis6991/gitsigns.nvim") --左侧git提示
+  use('hrsh7th/nvim-cmp') --the auto completion plugin
+  use('hrsh7th/cmp-nvim-lsp') --lsp本身的completion
+  use('hrsh7th/cmp-path') --文件路径
+  use('L3MON4D3/LuaSnip') --snippets引擎，不装这个自动补全会出问题
+  use('saadparwaiz1/cmp_luasnip')
+  use('rafamadriz/friendly-snippets')
+  use('numToStr/Comment.nvim') --gcc和gc注释
+  use('windwp/nvim-autopairs') --自动补全括号
+  use('akinsho/bufferline.nvim') --buffer分割线
+  use('lewis6991/gitsigns.nvim') --左侧git提示
   --<leader>ff: 全文检索文件名称
   --<leader>fg: 全文检索文件里的内容
   use {
-    "nvim-telescope/telescope.nvim", tag = '0.1.1',
+    'nvim-telescope/telescope.nvim', tag = '0.1.1',
     -- or                          , branch = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use("mfussenegger/nvim-jdtls") --Eclipse JDT Language Server
-  use("github/copilot.vim")
+  use('mfussenegger/nvim-jdtls') --Eclipse JDT Language Server
+  use('github/copilot.vim')
+
+  --debugger:
+  use('mfussenegger/nvim-dap')
+  use('leoluz/nvim-dap-go')
+  use { 'rcarriga/nvim-dap-ui', requires = {'mfussenegger/nvim-dap'} }
+  use('jose-elias-alvarez/null-ls.nvim')
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

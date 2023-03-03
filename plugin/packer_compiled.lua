@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/paulliu/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
+  catppuccin = {
+    loaded = true,
+    path = "/Users/paulliu/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/Users/paulliu/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -108,11 +113,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/paulliu/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
-  },
-  ["flit.nvim"] = {
-    loaded = true,
-    path = "/Users/paulliu/.local/share/nvim/site/pack/packer/start/flit.nvim",
-    url = "https://github.com/ggandor/flit.nvim"
   },
   ["friendly-snippets"] = {
     loaded = true,
@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/Users/paulliu/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/Users/paulliu/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/Users/paulliu/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
@@ -153,6 +158,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/paulliu/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/Users/paulliu/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-go"] = {
+    loaded = true,
+    path = "/Users/paulliu/.local/share/nvim/site/pack/packer/start/nvim-dap-go",
+    url = "https://github.com/leoluz/nvim-dap-go"
+  },
+  ["nvim-dap-ui"] = {
+    loaded = true,
+    path = "/Users/paulliu/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
   },
   ["nvim-jdtls"] = {
     loaded = true,
@@ -199,11 +219,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/paulliu/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/Users/paulliu/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["vim-tmux-navigator"] = {
     loaded = true,
